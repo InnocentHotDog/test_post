@@ -1,26 +1,19 @@
 ---
 layout: paper
-title:  "[CVPR22] Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free"
+title:  "[CVPR22]Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free"
 date: 2022-06-21 21:00:00
 author: "Tianlong Chen<sup>[1]</sup>*, Zhenyu Zhang<sup>[1]</sup>*, Yihua Zhang<sup>[2]</sup>*, Shiyu Chang<sup>[3]</sup>, Sijia Liu<sup>[2,4]</sup>, Zhangyang Wang<sup>[1]</sup>"
 affiliation: "<sup>[1]</sup>University of Texas at Austin, <sup>[2]</sup>Michigan State University, <sup>[3]</sup>University of California, Santa Barbara, <sup>[4]</sup>MIT-IBM Watson AI Lab"
 code: "https://github.com/VITA-Group/Backdoor-LTH"
 poster: "https://drive.google.com/file/d/1VnnC06NBoRCfSjw2RT91dKCeZ8iDEXCY/view?usp=sharing"
 paper: "https://www.google.com"
-tags: "TrustworthyML"
-categories: "paper"
 ---
 
-#### Abstract
-
-Trojan attacks threaten deep neural networks (DNNs) by poisoning them to behave normally on most samples, yet to produce manipulated results for inputs attached with a particular trigger. Several works attempt to detect whether a given DNN has been injected with a specific trigger during the training. In a parallel line of research, the lottery ticket hypothesis reveals the existence of sparse subnetworks which are capable of reaching competitive performance as the dense network after independent training. Connecting these two dots, we investigate the problem of Trojan DNN detection from the brand new lens of sparsity, even when no clean training data is available. Our crucial observation is that the Trojan features are significantly more stable to network pruning than benign features. Leveraging that, we propose a novel Trojan network detection regime: first locating a “winning Trojan lottery ticket” which preserves nearly full Trojan information yet only chance-level performance on clean inputs; then recovering the trigger embedded in this already isolated subnetwork. Extensive experiments on various datasets, i.e., CIFAR-10, CIFAR-100, and ImageNet, with different network architectures, i.e., VGG-16, ResNet-18, ResNet-20s, and DenseNet-100 demonstrate the effectiveness of our proposal.
-
----
-
-#### Motivation
+## Motivation
 
 <center>
 <b>
+
 How does the model sparsity relate to its train-time robustness against Trojan attacks?
 
 </b>
@@ -39,7 +32,7 @@ As models usually learn "too well" during training - so much that make various t
     padding: 2px;">Figure 1. An overview of our proposal: Weight pruning identifies the ‘winning Trojan ticket’, which can be used for Trojan detection and recovery.</div>
 </center>
 
-#### Model Pruning v.s. Trojan Attack
+## Model Pruning v.s. Trojan Attack
 
 We start our research by making an observation on the performance change of a backdoored model as we gradually increase the model sparsity with the model pruning technique. More specifically, we would like to see how the clean accuracy (CA) as well as attack success rate (ASR) will change with respect to the increasing sparsity. We plot the curve of CA and ASR w.r.t. sparsity ratio in Figure 1. Some interesting phenomena we listed below indicate that there is a strong connection between model sparsity and Trojan features.
 
