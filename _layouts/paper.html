@@ -36,12 +36,17 @@
 
     <main id="content" class="main-content" role="main">
       {{ content }}
+
+      <footer class="site-footer">
+        <center>
+            {% if page.maintainer %}
+            <span class="site-footer-credits">This page is maintained by {{page.maintainer}}.</span>
+            {% endif %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </center>
+      </footer>
     </main>
   </body>
-
-  <foot>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </foot>
 </html>
