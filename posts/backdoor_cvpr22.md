@@ -2,7 +2,7 @@
 title: "Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free"
 date: 2022-06-22
 author: Yihua Zhang
-layout: post
+layout: paper
 paper: https://arxiv.org/pdf/2205.11819.pdf
 code: https://github.com/VITA-Group/Backdoor-LTH
 poster: https://drive.google.com/file/d/1VnnC06NBoRCfSjw2RT91dKCeZ8iDEXCY/view?usp=sharing
