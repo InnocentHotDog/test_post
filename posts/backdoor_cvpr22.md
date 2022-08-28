@@ -2,7 +2,12 @@
 layout: paper
 title:  "[CVPR22]Quarantine: Sparsity Can Uncover the Trojan Attack Trigger for Free"
 date: 2022-06-21 21:00:00
-author: "<a href='https://tianlong-chen.github.io/'>Tianlong Chen</a><sup>[1]</sup>*, <a href='https://scholar.google.com/citations?user=ZLyJRxoAAAAJ&hl=zh-CN'>Zhenyu Zhang</a><sup>[1]</sup>*, <a href='https://www.yihua-zhang.com/'>Yihua Zhang</a><sup>[2]</sup>*, <a href='https://code-terminator.github.io/'>Shiyu Chang</a><sup>[3]</sup>, <a href='https://lsjxjtu.github.io/'>Sijia Liu</a><sup>[2,4]</sup>, <a href='https://vita-group.github.io/'>Zhangyang Wang</a><sup>[1]</sup>"
+author: "<a style='color: #dfebf7' href='https://tianlong-chen.github.io/'>Tianlong Chen</a><sup>[1]</sup>*, 
+         <a style='color: #dfebf7' href='https://scholar.google.com/citations?user=ZLyJRxoAAAAJ&hl=zh-CN'>Zhenyu Zhang</a><sup>[1]</sup>*, 
+         <a style='color: #dfebf7' href='https://www.yihua-zhang.com/'>Yihua Zhang</a><sup>[2]</sup>*, 
+         <a style='color: #dfebf7' href='https://code-terminator.github.io/'>Shiyu Chang</a><sup>[3]</sup>, 
+         <a style='color: #dfebf7' href='https://lsjxjtu.github.io/'>Sijia Liu</a><sup>[2,4]</sup>, 
+         <a style='color: #dfebf7' href='https://vita-group.github.io/'>Zhangyang Wang</a><sup>[1]</sup>"
 maintainer: "<a href='https://www.yihua-zhang.com'>Yihua Zhang</a>"
 affiliation: "<sup>[1]</sup>University of Texas at Austin, <sup>[2]</sup>Michigan State University, <sup>[3]</sup>University of California, Santa Barbara, <sup>[4]</sup>MIT-IBM Watson AI Lab"
 code: "https://github.com/VITA-Group/Backdoor-LTH"
