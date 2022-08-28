@@ -15,7 +15,6 @@
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
-    <meta name="body-link-color" content="#cc4608">
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title }}</h1>
       <h2 class="project-tagline" style="color:white">{{ page.author }}</h2>
@@ -33,7 +32,6 @@
       <a href="{{ page.slides }}" class="btn">Slides</a>
       {% endif %}
     </header>
-    <meta name="body-link-color" content="#086acc">
 
     <main id="content" class="main-content" role="main">
       {{ content }}
@@ -43,11 +41,11 @@
             {% if page.maintainer %}
             <span class="site-footer-credits">This page is maintained by @{{page.maintainer}}. &copy; Copyright 2022 OPTML</span>
             {% endif %}
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </center>
       </footer>
     </main>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </html>
